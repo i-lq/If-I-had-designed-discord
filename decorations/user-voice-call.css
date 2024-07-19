@@ -1,0 +1,12 @@
+.container_adcaac .actionButtons_adcaac {
+    height: 0 !important;
+    opacity: 0;
+    padding-top: 0 !important;
+    transition: height .25s, opacity .25s, padding .25s;
+}
+
+.container_adcaac:hover .actionButtons_adcaac {
+    height: 2.25em !important;
+    opacity: 1;
+    padding-top: 4px !important;
+}
