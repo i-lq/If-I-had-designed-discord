@@ -1,0 +1,9 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Server more options fix */
+
+.scroller_d90b3d.thin_c49869.scrollerBase_c49869 {
+    padding-right: 7px !important;
+}

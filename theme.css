@@ -1,0 +1,99 @@
+:root {
+    --sky-brand-youtube: 239 35 60;
+    --sky-brand-youtube-hightlighter: 217 4 41;
+    --sky-brand-spotify: 29 185 84;
+    --sky-brand-spotify-hightlighter: 22 229 139;
+    --sky-brand-twitch: 109 35 182;
+    --sky-brand-twitch-hightlighter: 130 47 175;
+    --sky-brand-crunchyroll: 239 67 35;
+    --sky-brand-crunchyroll-hightlighter: 239 67 35;
+    --sky-brand-facebook: 20 82 255;
+    --sky-brand-facebook-hightlighter: 59 80 249;
+}
+
+:root {
+    --sky-primary: 13 13 13;
+    --sky-secondary: 15 15 15;
+    --sky-third: 17 17 17;
+    --sky-fourth: 20 20 20;
+    --sky-fifth: 22 22 22;
+    --sky-sixth: 24 24 24;
+    --sky-text-primary: 255 255 255;
+    --sky-text-secondary: 119 119 119;
+    --sky-text-third: 204 204 204;
+}
+
+:root,
+.theme-dark {
+    --bd-blue: hsl(214, calc(var(--saturation-factor, 1) * 54%), 48%);
+    --bd-blue-hover: hsl(214, calc(var(--saturation-factor, 1) * 80%), 58%);
+    --bd-blue-active: hsl(214, calc(var(--saturation-factor, 1) * 60%), 42%);
+    --bdfdb-blurple: var(--bd-blue);
+    --bdfdb-green: var(--status-positive-background);
+    --bdfdb-yellow: var(--status-warning-background);
+    --bdfdb-red: var(--status-danger-background);
+
+    --blurple: var(--bd-blue);
+    --text-brand: var(--bd-blue);
+    --control-brand-foreground: var(--bd-blue);
+    --brand-500: var(--bd-blue);
+    --brand-experiment: var(--bd-blue);
+    --brand-experiment-200: var(--bd-blue);
+    --brand-experiment-360: var(--bd-blue-hover);
+    --brand-experiment-400: var(--bd-blue);
+    --brand-experiment-430: var(--bd-blue-hover);
+    --brand-experiment-500: var(--bd-blue);
+    --brand-experiment-530: var(--bd-blue-hover);
+    --brand-experiment-560: var(--bd-blue-hover);
+    --brand-experiment-600: var(--bd-blue-active);
+
+    --primary-600: rgb(var(--sky-primary));
+    --primary-645: rgb(var(--sky-third));
+    --primary-630: rgb(var(--sky-fourth));
+    --primary-700: rgb(var(--sky-fifth));
+
+    --primary-dark-600-rgb: var(--sky-primary);
+    --primary-dark-660-rgb: var(--sky-sixth);
+    --green-360: var(--status-positive-background);
+
+    --background-primary: rgb(var(--sky-primary));
+    --background-secondary: rgb(var(--sky-secondary));
+    --background-tertiary: rgb(var(--sky-fourth));
+    --bg-base-tertiary: rgb(var(--sky-primary));
+    --background-accent: rgb(28 28 28);
+    --background-secondary-alt: rgb(var(--sky-sixth));
+    --background-floating: rgb(32 32 32);
+    --background-modifier-accent: rgb(41 41 41);
+    --activity-card-background: rgb(var(--sky-secondary));
+    --channeltextarea-background: rgb(var(--sky-sixth));
+    --channels-default: rgb(142 146 151);
+    --modal-background: #212121;
+    --modal-footer-background: #141414;
+
+    --background-modifier-hover: rgb(0 0 0 / 15%);
+    --background-modifier-active: rgb(0 0 0 / 20%);
+    --background-modifier-selected: rgb(0 0 0 / 30%);
+
+    --background-mentioned: rgb(250 166 26 / 5%);
+    --background-mentioned-hover: rgb(250 166 26 / 8%);
+    --background-mentioned-border: rgb(250 166 26);
+    --background-mentioned-toolbar: rgb(36, 29, 18);
+
+    --text-normal: rgb(var(--sky-text-primary));
+    --text-muted: rgb(var(--sky-text-secondary));
+    --header-secondary: rgb(var(--sky-text-third));
+    --text-positive: hsl(152, calc(var(--saturation-factor, 1) * 48%), 48.6%);
+    --text-warning: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+    --text-danger: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+    --status-positive-background: var(--text-positive);
+    --status-warning-background: var(--text-warning);
+    --status-danger-background: var(--text-danger);
+    --info-positive-background: hsl(152, calc(var(--saturation-factor, 1) * 48%), 48.6%, 0.1);
+    --info-positive-foreground: var(--status-positive-background);
+    --info-warning-background: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%, 0.1);
+    --info-warning-foreground: var(--status-warning-background);
+    --info-danger-background: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%, 0.1);
+    --info-danger-foreground: var(--status-danger-background);
+    --interactive-muted: #5E5F66;
+    --font-display: var(--font-primary);
+}

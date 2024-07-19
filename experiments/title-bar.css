@@ -1,0 +1,37 @@
+@import url("title-bar/user-voice-mic-def-settings.css");
+@import url("title-bar/fix-home-icon.css");
+@import url("title-bar/fix-topbar.css");
+
+:root {
+    --titlebar-height: 3em;
+}
+
+.titleBar_a934d8 {
+    margin-top: 0px !important;
+    height: var(--titlebar-height) !important;
+    user-select: none;
+    pointer-events: none;
+    app-region: no-drag;
+    position: fixed;
+    width: 100vw;
+}
+
+.platform-win .bg_d4b6c5 {
+    top: 0px;
+}
+
+.titleBar_a934d8:before {
+    content: "";
+    --sky-titlebar-spacing: 14em;
+    width: calc(100vw - var(--sky-titlebar-spacing));
+    right: var(--sky-titlebar-spacing);
+    position: fixed;
+    height: var(--titlebar-height);
+    app-region: drag;
+}
+
+/* Hide discord logo brand */
+
+.wordmark_a934d8 {
+    display: none;
+}

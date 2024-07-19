@@ -1,0 +1,96 @@
+div#vc-spotify-player {
+    z-index: 5;
+    position: fixed;
+    bottom: 4.5em;
+    --sky-vc-spotify-player-height: 3em;
+    --sky-vc-spotify-player-width: 3em;
+    height: var(--sky-vc-spotify-player-height);
+    width: var(--sky-vc-spotify-player-width);
+    left: 13px;
+    border-radius: 7px;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    transition: width .15s, box-shadow .15s, height .15s;
+    background: var(--vc-spotify-track-image) center/cover !important;
+}
+
+div#vc-spotify-player:hover {
+    --sky-vc-spotify-player-height: 8em;
+    --sky-vc-spotify-player-width: 18.5em;
+    box-shadow: 0 8px 47px -26px black;
+    transition: width .35s, box-shadow .35s, height .35s;
+}
+
+div#vc-spotify-player:before {
+    content: "";
+    width: var(--sky-vc-spotify-player-width);
+    height: var(--sky-vc-spotify-player-height);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: -1;
+    border-radius: 5px;
+    transition: background .45s, width .15s, height .15s;
+}
+
+div#vc-spotify-player:hover:before {
+    background: rgb(var(--sky-secondary) / 60%);
+    backdrop-filter: blur(1em);
+    transition: background 0s;
+}
+
+div#vc-spotify-player>div#vc-spotify-info-wrapper {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: opacity 0s;
+    height: 4em;
+    padding: 6px;
+    width: calc(var(--sky-vc-spotify-player-width) - 1em);
+}
+
+div#vc-spotify-player>div#vc-spotify-progress-bar {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: opacity .0s;
+    padding: 0px 5px;
+    margin: -6px 0 0 0;
+    width: calc(var(--sky-vc-spotify-player-width) - 2em);
+}
+
+div#vc-spotify-player>.vc-spotify-button-row {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: opacity .0s;
+}
+
+/* Hover */
+
+div#vc-spotify-player:hover>div#vc-spotify-info-wrapper {
+    opacity: 1;
+    pointer-events: stroke;
+    transition: opacity 1s;
+}
+
+div#vc-spotify-player:hover>div#vc-spotify-progress-bar {
+    opacity: 1;
+    pointer-events: stroke;
+    transition: opacity 1s;
+}
+
+div#vc-spotify-player:hover>.vc-spotify-button-row {
+    opacity: 1;
+    pointer-events: stroke;
+    transition: opacity 1s;
+}
+
+#vc-spotify-info-wrapper img {
+    user-select: none;
+    pointer-events: none;
+}
