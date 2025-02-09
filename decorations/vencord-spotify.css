@@ -145,3 +145,10 @@ section.panels_c48ade {
 .outer_c0bea0.theme-dark.images-dark.panel_c0bea0 {
     z-index: 10;
 }
+
+/* Guild Member List */
+
+.members_c8ffbb.thin__99f8c.scrollerBase__99f8c.fade__99f8c.customTheme__99f8c {
+    z-index: 5;
+    background: rgb(var(--sky-secondary) / calc(var(--transparency-intensity) * 1%)) !important;
+}
