@@ -52,7 +52,9 @@ div#vc-spotify-player:before {
 
 /* Making the discord more transparent */
 
-nav.container__2637a {
+/* The Lists */
+
+nav.container__2637a, .container__551b0 {
     z-index: 4;
 }
 
@@ -70,8 +72,21 @@ nav.wrapper_ef3116.guilds_c48ade {
     background: transparent !important;
 }
 
+/* Fixed Color From Guild Channel List */
 .theme-dark .container__2637a {
     background: rgb(var(--sky-secondary) / calc(var(--transparency-intensity) * 1%));
+}
+
+/* Discover Above Section List */
+
+.container__551b0 {
+    background: rgb(var(--sky-secondary) / calc(var(--transparency-intensity) * .97%));
+}
+
+/* Discover Page Content */
+
+.container_a592e1 {
+    z-index: 5;
 }
 
 .scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c {
