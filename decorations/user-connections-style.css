@@ -1,24 +1,24 @@
 :root {
-    --sky-user-connections-style-deg: 40deg;
-    --sky-user-connections-style-vs: rgb(var(--sky-primary) / 20%);
+    --sky-user-connections-style-deg: -40deg;
+    --sky-user-connections-style-vs: rgb(var(--sky-primary) / 0%);
 }
 
-.connectedAccountContainer_f3eb60:has(div):has(img[aria-label="YouTube"]) {
-    background: linear-gradient(var(--sky-user-connections-style-deg), rgb(var(--sky-brand-youtube)) -150%, var(--sky-user-connections-style-vs));
+.connectedAccountContainer_e6abe8:has(.connectedAccount_e6abe8>img[aria-label="YouTube"]) {
+    background: linear-gradient(var(--sky-user-connections-style-deg), rgb(var(--sky-brand-youtube) / 50%) -150%, var(--sky-user-connections-style-vs));
 }
 
-.connectedAccountContainer_f3eb60:has(div):has(img[aria-label="Spotify"]) {
-    background: linear-gradient(var(--sky-user-connections-style-deg), rgb(var(--sky-brand-spotify)) -150%, var(--sky-user-connections-style-vs));
+.connectedAccountContainer_e6abe8:has(.connectedAccount_e6abe8>img[aria-label="Spotify"]) {
+    background: linear-gradient(var(--sky-user-connections-style-deg), rgb(var(--sky-brand-spotify)/ 50%) -150%, var(--sky-user-connections-style-vs));
 }
 
-.connectedAccountContainer_f3eb60:has(div):has(img[aria-label="Twitch"]) {
-    background: linear-gradient(var(--sky-user-connections-style-deg), rgb(var(--sky-brand-twitch)) -150%, var(--sky-user-connections-style-vs));
+.connectedAccountContainer_e6abe8:has(.connectedAccount_e6abe8>img[aria-label="Twitch"]) {
+    background: linear-gradient(var(--sky-user-connections-style-deg), rgb(var(--sky-brand-twitch)/ 50%) -150%, var(--sky-user-connections-style-vs));
 }
 
-.connectedAccountContainer_f3eb60:has(div):has(img[aria-label="Crunchyroll"]) {
-    background: linear-gradient(var(--sky-user-connections-style-deg), rgb(var(--sky-brand-crunchyroll)) -150%, var(--sky-user-connections-style-vs));
+.connectedAccountContainer_e6abe8:has(.connectedAccount_e6abe8>img[aria-label="Crunchyroll"]) {
+    background: linear-gradient(var(--sky-user-connections-style-deg), rgb(var(--sky-brand-crunchyroll)/ 50%) -150%, var(--sky-user-connections-style-vs));
 }
 
-.connectedAccountContainer_f3eb60:has(div):has(img[aria-label="Facebook"]) {
-    background: linear-gradient(var(--sky-user-connections-style-deg), rgb(var(--sky-brand-facebook)) -150%, var(--sky-user-connections-style-vs));
+.connectedAccountContainer_e6abe8:has(.connectedAccount_e6abe8>img[aria-label="Facebook"]) {
+    background: linear-gradient(var(--sky-user-connections-style-deg), rgb(var(--sky-brand-facebook)/ 50%) -150%, var(--sky-user-connections-style-vs));
 }

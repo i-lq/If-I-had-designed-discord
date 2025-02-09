@@ -5,6 +5,8 @@ div#vc-spotify-player {
     overflow: hidden;
     height: 3em;
     transition: height .25s;
+    /* width: calc(100% - 1.45em); */
+    width: calc(100% - 1em);
 }
 
 div#vc-spotify-player:hover {
@@ -21,15 +23,18 @@ div#vc-spotify-player:hover {
 
 div#vc-spotify-player:before {
     content: "";
-    position: absolute;
-    width: 5em;
-    height: 4em;
     background: var(--vc-spotify-track-image) center/cover;
-    filter: blur(5em);
-    transform: translate(-1em, -6px);
-    z-index: 0;
+    position: fixed;
+    width: 40em;
+    height: 200vh;
+    bottom: 0;
+    left: 0;
+    filter: blur(25em);
+    transform: translate(-25em, 0);
+    z-index: -9999999999999999999999999999999;
     transition: background .25s;
-
+    user-select: none;
+    pointer-events: none;
 }
 
 /* Fixes */
@@ -42,4 +47,95 @@ div#vc-spotify-player:before {
 .vc-spotify-button-row {
     z-index: 5;
     position: relative;
+}
+
+
+/* Making the discord more transparent */
+
+nav.container__2637a {
+    z-index: 4;
+}
+
+nav.wrapper_ef3116.guilds_c48ade {
+    z-index: 5;
+}
+
+.wrapper_ef3116 {
+    background-color: rgb(var(--sky-fourth) / calc(var(--transparency-intensity) * 1.1%));
+}
+
+/* A something random with background... lol */
+
+.footer__214dc {
+    background: transparent !important;
+}
+
+.theme-dark .container__2637a {
+    background: rgb(var(--sky-secondary) / calc(var(--transparency-intensity) * 1%));
+}
+
+.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c {
+    background: rgb(var(--sky-secondary) / calc(var(--transparency-intensity) * 1%));
+}
+
+main.chatContent_f75fb0 {
+    z-index: 5;
+    background: rgb(var(--sky-primary) / calc(var(--transparency-intensity) * 1%));
+}
+
+nav.privateChannels__35e86 {
+    background: rgb(var(--sky-secondary) / 0%) !important;
+    z-index: 11;
+}
+
+.container__133bf {
+    background: rgb(var(--sky-primary) / calc(var(--transparency-intensity) * .9%));
+    z-index: 5;
+}
+
+/* User Profile / Voice Connected / Spotify player, transparency */
+
+section.panels_c48ade {
+    background: rgb(var(--sky-sixth) / 0%) !important;
+}
+
+.wrapper_e131a9 {
+    background: rgb(var(--sky-secondary) / 0%) !important;
+}
+
+.wrapper_e131a9>.container_e131a9 {
+    background: rgb(var(--sky-sixth) / calc(var(--transparency-intensity) * 1%));
+}
+
+/* Spotify */
+.theme-dark #vc-spotify-player {
+    background: rgb(var(--sky-sixth) / calc(var(--transparency-intensity) * 1%));
+}
+
+/* User profile */
+
+.theme-dark .container__37e49 {
+    background: rgb(var(--sky-sixth) / calc(var(--transparency-intensity) * 1%));
+}
+
+/* Dark title bar */
+
+.typeWindows__421ed.withFrame__421ed.titleBar__421ed.withBackgroundOverride__421ed {
+    background: rgb(var(--sky-primary));
+}
+
+.theme-dark .themed__9293f {
+    background: rgb(var(--sky-sixth) / calc(var(--transparency-intensity) * 1.1%));
+}
+
+.container__7d20c {
+    background: rgb(var(--sky-sixth) / calc(var(--transparency-intensity) * .1%));
+}
+
+.scroller__7d20c {
+    background: rgb(41 41 41 / calc(var(--transparency-intensity) * 1%)) !important;
+}
+
+.nowPlayingColumn__133bf {
+    background: rgb(var(--sky-primary) / 0%);
 }

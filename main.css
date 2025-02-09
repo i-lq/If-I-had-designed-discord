@@ -1,12 +1,21 @@
 @import url("theme.css");
 
 /* Decorations */
+@import url("decorations/embed-platform-color-gradient.css");
 @import url("decorations/no-scrollbar.css");
-@import url("decorations/nitro-hightlighter.css");
 @import url("decorations/user-connections-style.css");
 @import url("decorations/user-voice-call.css");
 @import url("decorations/vencord-spotify.css");
 
+@import url("decorations/skycrown.css");
+
 
 /* Fixes */
 @import url("fix/voice-chat-black-background.css");
+@import url("fix/discord-nitro-button-in-dms-hide.css");
+@import url("fix/discord-search-button-in-dms-hide.css");
+
+
+:root {
+    --transparency-intensity: 85;
+}
