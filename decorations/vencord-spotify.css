@@ -25,14 +25,14 @@ div#vc-spotify-player:before {
     content: "";
     background: var(--vc-spotify-track-image) center/cover;
     position: fixed;
-    width: 40em;
+    width: 100vw;
     height: 200vh;
     bottom: 0;
     left: 0;
-    filter: blur(25em);
-    transform: translate(-25em, 0);
+    filter: blur(40em);
+    transform: translate(-25vw, 50vh);
     z-index: -9999999999999999999999999999999;
-    transition: background .25s;
+    transition: background 5s;
     user-select: none;
     pointer-events: none;
 }
@@ -61,7 +61,7 @@ nav.wrapper_ef3116.guilds_c48ade {
 }
 
 .wrapper_ef3116 {
-    background-color: rgb(var(--sky-fourth) / calc(var(--transparency-intensity) * 1.1%));
+    background-color: rgb(var(--sky-fourth) / calc(var(--transparency-intensity) * 1%));
 }
 
 /* A something random with background... lol */
@@ -89,7 +89,7 @@ nav.privateChannels__35e86 {
 }
 
 .container__133bf {
-    background: rgb(var(--sky-primary) / calc(var(--transparency-intensity) * .9%));
+    background: rgb(var(--sky-primary) / calc(var(--transparency-intensity) * 1.05%));
     z-index: 5;
 }
 
@@ -118,24 +118,30 @@ section.panels_c48ade {
     background: rgb(var(--sky-sixth) / calc(var(--transparency-intensity) * 1%));
 }
 
+.theme-dark .themed__9293f {
+    background: rgb(var(--sky-sixth) / calc(var(--transparency-intensity) * 1%));
+}
+
+.container__7d20c {
+    background: rgb(var(--sky-sixth) / calc(var(--transparency-intensity) * 1%));
+}
+
+.scroller__7d20c {
+    background: rgb(var(--sky-secondary) / calc(var(--transparency-intensity) * 1.05%)) !important;
+}
+
+.nowPlayingColumn__133bf {
+    background: rgb(var(--sky-primary) / 0%);
+}
+
 /* Dark title bar */
 
 .typeWindows__421ed.withFrame__421ed.titleBar__421ed.withBackgroundOverride__421ed {
     background: rgb(var(--sky-primary));
 }
 
-.theme-dark .themed__9293f {
-    background: rgb(var(--sky-sixth) / calc(var(--transparency-intensity) * 1.1%));
-}
+/* Dark User Outer */
 
-.container__7d20c {
-    background: rgb(var(--sky-sixth) / calc(var(--transparency-intensity) * .1%));
-}
-
-.scroller__7d20c {
-    background: rgb(41 41 41 / calc(var(--transparency-intensity) * 1%)) !important;
-}
-
-.nowPlayingColumn__133bf {
-    background: rgb(var(--sky-primary) / 0%);
+.outer_c0bea0.theme-dark.images-dark.panel_c0bea0 {
+    z-index: 10;
 }
